@@ -1,0 +1,58 @@
+.footer-box{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.footer-box > section{
+    margin: 0px 70px ;
+    display: flex;
+    flex-direction: column;
+}
+.footer-box > section>span{
+    margin: 5px;
+    letter-spacing: 2px;
+}
+
+.contact-form{
+    display: flex;
+}
+.contact-form>form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form > form >h3{
+    margin-top: 10px;
+}
+
+.contact-form > form > input {
+    margin: 5px;
+    padding: 7px;
+    width: 350px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(7, 44, 62);
+    color: rgb(255, 255, 255);
+}
+
+.contact-form > form > button{
+    margin: 5px;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(7, 44, 62);
+    color: white;
+}
+
+.contact-form > form > textarea {
+    margin: 5px;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+    height: 100px;
+    border: none;
+}
+
+.footer-bottom > p{
+    letter-spacing: 2px;
+}

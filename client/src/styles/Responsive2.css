@@ -1,0 +1,231 @@
+@media screen and (max-width:600px) {
+    /*navbar*/
+    .navbar{
+        margin-bottom: 30px;
+    }
+    .nav-links {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    /* hamburger menu */
+    
+
+    /* slideshow */
+    .logo{
+        font-size: 50px;
+    }
+    .carousel-inner{
+        height: 50%;
+    }
+    .bg-text div{
+        top: 12%;
+    }
+    .bg-text {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 100%;
+        padding: 55px;
+        color: white;
+        line-height: 28px;
+        letter-spacing: 3.2px;
+    }
+    .bg-text h2 {
+        font-size: 2.5rem;
+        margin: 9px;
+    }
+    .bg-text p {
+        font-size: 1.5rem;
+        padding: 24px;
+    }
+    .joinUsDiv {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .joinUs a {
+        font-size: 35px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+    .joinUs {
+        border: 3px solid white;
+        padding: 10px 25px;
+        color: white;
+        cursor: pointer;
+    }
+
+    /*shakti week*/
+    .container{
+        flex-direction: column;
+    }
+    .h2{
+        font-size: 45px;
+        top: 0;
+        margin-bottom: 45px;
+    }
+    .para{
+        letter-spacing: 2.5px;
+        line-height: 30px;
+        font-size: 25px;
+        margin-left: 6%;
+        margin-right: 6%;
+        margin-bottom: 3%;
+    }
+
+    /*about us*/
+    .box{
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .heading{
+        position: relative;
+        display: inline;
+        text-align: center;
+        font-family: -webkit-body;
+        margin-left: 33%;
+        margin-top: 2%;
+    }
+
+    .heading h1 {
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .img {
+        display: flex;
+        position: relative;
+        margin-left: 1%;
+    }
+    .img > img {
+        height: 230px;
+        width: 260px;
+    }
+    .content {
+        position: relative;
+        letter-spacing: 2.5px;
+        line-height: 35px;
+        font-size: 25px;
+        padding: 25px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    /* Our Mentors */
+    .testimonials{
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .slider h1{
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .cardtitle{
+        font-size: 30px;
+    } 
+    .carddescription{
+        font-size: 22px;
+    }
+    .cardimg {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        max-height: 7rem;
+        border-radius: 9999px;
+      } 
+
+ 
+    /* pastworks - bdd */
+    .content-project {
+        position: absolute;
+        text-align: center;
+        top: 15%;
+        width: 62%;
+    }
+    .content-project > h2 {
+        font-size: 60px;
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+    }
+    .content-project > p {
+        font-size: 30px;
+        letter-spacing: 2px;
+        line-height: 30px;
+        padding: 25px;
+    }
+    .content-project > button{
+        font-size: 24px;
+        width: 25%;
+        padding: 7px;
+        border-radius: 5px;
+      }
+
+    /* social media handles */
+    .media-handels h1{
+        font-size: 60px;
+        font-weight: 600;
+        margin-bottom: -15px;
+    }   
+    .social-icon > a > img {
+        width: 190px;
+    }
+
+    /* Aashraya stats */
+    .text-stats{
+        height: 1480px;
+    }
+    .text-stats h1 {
+        margin-top: 15px;
+        font-size: 60px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .icon-stats img{
+        width: 180px;
+    }
+    .icon-stats {
+        width: 150px;
+    }
+    .icon-stats h3{
+        font-size: 35px;
+    }
+
+    /* contact us */
+    
+    .contact-form-all > div > img{
+        visibility: hidden;
+    }
+    .form-container-box{
+        height: 500px;
+        margin-right: 35%;
+    }
+    .form-container-box > input{
+        font-size: 28px;
+        padding: 9px;
+        margin: 9px;
+    }
+    .form-container-box > button{
+        margin-top: 18px;
+        padding: 10px;
+    }
+
+    /* footer */
+    .footer-box > section > span{
+        font-size: 25px;
+        margin: 3px;
+        letter-spacing: 2px;
+    }
+    .contact-form h3{
+        font-size: 40px;
+    }
+    .contact-form{
+        font-size: 24px;
+    }
+    .footer-bottom{
+        font-size: 24px;
+    }
+
+}

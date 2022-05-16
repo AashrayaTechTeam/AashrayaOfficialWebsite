@@ -1,0 +1,107 @@
+.form-box{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30%;
+    border: white solid 2px;
+    width: 700px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 7px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+.form-container > h1{
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+.form-container > input {
+    padding: 10px;
+    margin: 10px;
+    width: 600px;
+    border-radius: 7px;
+    border: none;
+}
+.form-container > button{
+    padding: 10px;
+    margin: 10px;
+}
+.link{
+    cursor: pointer;
+    color: white;
+    margin: 10px 0px;
+    width: 30%;
+    text-align: center;
+
+}
+
+
+.box-admin{
+    margin-top: 5%;
+    min-height: 100vh;
+    display: flex;
+    background-image: linear-gradient(to bottom right, rgb(225, 101, 227),rgb(83, 171, 209));
+}
+.routes-for-admin{
+    width: 15%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+}
+.routes-for-admin > h1{
+    margin:30px auto;
+    padding: 10px;
+    font-size: 25px;
+    /* background-color: rgb(16, 57, 57); */
+    border-bottom: solid 5px rgb(16, 57, 57);
+}
+.routes-for-admin>ul{
+    list-style: none;
+    line-height: 45px;
+    font-size: 17px;
+}
+
+.Link-tag{
+    text-decoration: none;
+    color: inherit;
+    margin: 20px 0px;
+}
+.Link-tag:hover{
+    color: rgb(88, 168, 230);
+}
+.routes-for-admin>ul>li{
+
+    padding: 20px 30px;
+}
+
+.card-to-add{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0px 7%;
+}
+
+.card1{
+    margin: 30px 10px;
+    width: 60%;
+    height: auto;
+    box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+}
+.card2{
+    margin: 30px 10px;
+    width: 35%;
+    height: auto;
+    box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+}
+
+.card-to-add > div > h1{
+    display: flex;
+    margin: auto;
+}

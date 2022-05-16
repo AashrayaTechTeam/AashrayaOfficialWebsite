@@ -1,0 +1,44 @@
+.dropdown-btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 10%;
+}
+.team-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top:20%;
+    margin: 40px;
+}
+.card-team{
+
+    display: flex;
+    background-color: rgba(19, 142, 230, 0.363);
+    padding: 10px;
+    border-radius:10px;
+    margin: 10px;
+    height: auto;
+    width: auto;
+}
+
+.box-image > img{
+    width: 150px;
+    height: 150px;
+    border: solid 5px rgb(172, 42, 148);
+    padding: 4px;
+    border-radius: 100%;
+}
+
+.detail-of-member{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    line-height: 25px;
+    margin: 10px;
+    flex-direction: column;
+    font-size: 15px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif !important;
+}

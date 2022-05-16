@@ -1,0 +1,25 @@
+
+
+.media-handels h3 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.social-icon > a > img {
+  width: 150px;
+  margin: 10px 30px;
+  transition: all 0.4s ease-in-out;
+}
+.social-container {
+  transition: all 0.6s ease-in-out;
+  height: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.social-icon > a > img:hover {
+  transform: rotate(-10deg);
+}
+
+
+

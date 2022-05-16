@@ -1,0 +1,66 @@
+.bg-image {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+/* Position text in the middle of the page/image */
+.bg-background {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0 0 0 /70%); /* Black w/opacity/see-through */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+}
+.bg-textdiv {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top:10%;
+  margin: auto;
+  color: white;
+}
+
+.bg-text {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 100%;
+  padding: 20px;
+  color: white;
+  line-height: 30px;
+  letter-spacing: 3px;
+}
+.bg-text h1 {
+  font-size: 2.1rem;
+}
+.bg-text p {
+  font-size: 16px;
+}
+.joinUsDiv {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+}
+
+.joinUs {
+  float: right;
+  border: 3px solid white;
+  padding: 10px 25px;
+  color: white;
+  cursor: pointer;
+}
+.joinUs a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}

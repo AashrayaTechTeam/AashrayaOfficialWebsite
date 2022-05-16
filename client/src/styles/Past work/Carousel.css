@@ -1,0 +1,98 @@
+.carousel-caption {
+    margin-bottom: 15rem;
+  }
+  .main-header {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .img-thumbnail {
+    width: 20rem;
+    height: 15rem;
+  }
+  body,
+  html,
+  * {
+    font-family: "Architects Daughter", cursive;
+  }
+
+  
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+.testim {
+  width: 100%;
+  /* height: 500px; */
+  background-color: black;
+  /* position: relative; */
+  /* margin: 80px 0px; */
+  overflow: hidden;
+}
+
+.wrap{
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  }
+.wrap > img{
+  width: 100%;
+  position: relative;
+  height:500px;
+  transition: all 1s ease-in-out;
+  opacity: 0.4;
+}
+.wrap>img:hover{
+transform: scale(1.1);
+opacity: 0.5;
+}
+
+.content-project{
+  position: absolute;
+  text-align: center;
+  top:30%;
+  width: 50%;
+  color: rgb(226, 243, 255);
+}
+.content-project > h2{
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.content-project > p{
+  font-size: 17px;
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+.content-project > button{
+  border: none;
+  width:30%;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: rgba(86, 195, 228, 0.74);
+  box-shadow: inset;
+  transition: all 0.6s ease-in-out;
+}
+
+.content-project>button:hover{
+  background-color: rgb(86, 195, 228);
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+}
+

@@ -1,0 +1,32 @@
+#aboutUs {
+    color:black;
+}
+.heading{
+	width: 100%;
+    text-align: center;
+    margin-top:5%;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	text-align: left;
+    padding: 5px;
+    margin-bottom: 5%; 
+}
+.img {
+    margin-left: 7%;
+}
+.img > img {
+    height: 300px;
+    width: 300px;
+}
+
+.content {
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    padding: 36px;
+    margin-right: 5%;
+}
