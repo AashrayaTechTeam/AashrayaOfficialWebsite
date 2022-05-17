@@ -7,6 +7,7 @@ function Poster() {
     const [posters,setPosters] = useState("");
     const [loading,setLoading] = useState(true);
     const [count,setCount] = useState(0);
+
     useEffect( async()=>{
         const res = await fetch("/getPoster" , {
           method:"GET" ,
@@ -28,6 +29,7 @@ function Poster() {
       },[])
 
       if(loading) return <>loading..</>
+      
   return (
     <div style={{position:"absolute",top:"0"}}>
 

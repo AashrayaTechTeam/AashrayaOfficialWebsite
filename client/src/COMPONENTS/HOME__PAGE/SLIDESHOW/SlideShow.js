@@ -1,8 +1,5 @@
 import React, { useState ,useEffect} from "react";
 import { Button, Carousel, Image } from "react-bootstrap";
-import books from "../../../ASSETS/images/books.jpg";
-import book from "../../../ASSETS/images/book.jpg";
-import library from "../../../ASSETS/images/library.jpg";
 import "./slideShow.css";
 import { Link } from "react-router-dom";
 

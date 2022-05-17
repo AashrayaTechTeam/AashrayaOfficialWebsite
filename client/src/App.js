@@ -23,9 +23,6 @@ function App() {
         <Route path="/team" >
         <ListTeam/>
         </Route>
-        <Route path="/admin/admin_handle" >
-        <AdminHandle/>
-        </Route>
         <Route path="/about" >
         <About/>
         </Route>
@@ -33,12 +30,15 @@ function App() {
           <Join_us />
         </Route>
         <Route path="/saktiweek" component={SaktiWeek} />
+        <Route path="/admin/admin_handle" >
+        <AdminHandle/>
+        </Route>
         <Route path="/admin">
           <Admin/>
         </Route>
+        <Route path="/poster"  component={Poster} />
         <Route path ="/career" component ={Career}/>
         <Route path="/BookDonationDrive" component={BookDonationDrive} />
-        <Route path="/poster"  component={Poster} />
         <Route path="/:id" component={SlideShow_detail} />
         <Route path="/" component={Home} exact={true} />
         <Route path="*" exact={true} >

@@ -3,11 +3,11 @@ const express = require('express')
 const app = express();
 const PORT = process.env.PORT || 5000
 const path = require("path")
-dotenv.config({path:"./config.env"});
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}))
 
+dotenv.config({path:"./config.env"});
 require("./__DATABASE/SERVER/initialiseDB");
 
 
