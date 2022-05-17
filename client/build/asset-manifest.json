@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.88119f4c.chunk.css",
-    "main.js": "/static/js/main.452d4923.chunk.js",
-    "main.js.map": "/static/js/main.452d4923.chunk.js.map",
+    "main.js": "/static/js/main.952adc81.chunk.js",
+    "main.js.map": "/static/js/main.952adc81.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f7192a57.js",
     "runtime-main.js.map": "/static/js/runtime-main.f7192a57.js.map",
     "static/css/2.047300a4.chunk.css": "/static/css/2.047300a4.chunk.css",
@@ -12,17 +12,14 @@
     "static/css/2.047300a4.chunk.css.map": "/static/css/2.047300a4.chunk.css.map",
     "static/css/main.88119f4c.chunk.css.map": "/static/css/main.88119f4c.chunk.css.map",
     "static/js/2.cc85d304.chunk.js.LICENSE.txt": "/static/js/2.cc85d304.chunk.js.LICENSE.txt",
-    "static/media/book.5cd80b89.jpg": "/static/media/book.5cd80b89.jpg",
-    "static/media/books.46870b5d.jpg": "/static/media/books.46870b5d.jpg",
     "static/media/library.38390ce3.jpg": "/static/media/library.38390ce3.jpg",
-    "static/media/logo.df0a05a8.jpg": "/static/media/logo.df0a05a8.jpg",
-    "static/media/saktiWeek.bac4c6f1.webp": "/static/media/saktiWeek.bac4c6f1.webp"
+    "static/media/logo.df0a05a8.jpg": "/static/media/logo.df0a05a8.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.f7192a57.js",
     "static/css/2.047300a4.chunk.css",
     "static/js/2.cc85d304.chunk.js",
     "static/css/main.88119f4c.chunk.css",
-    "static/js/main.452d4923.chunk.js"
+    "static/js/main.952adc81.chunk.js"
   ]
 }
