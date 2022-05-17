@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+require("../../__DATABASE/SERVER/initialiseDB");
 const Team = require('../../__DATABASE/MODELS/teamSchema')
 const Auth = require('../../__DATABASE/MODELS/authSchema')
 const jwt = require('jsonwebtoken')

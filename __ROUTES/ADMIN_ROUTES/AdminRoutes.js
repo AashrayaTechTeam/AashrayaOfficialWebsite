@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+require("../../__DATABASE/SERVER/initialiseDB");
 const Poster = require('../../__DATABASE/MODELS/posterSchema.js');
 const SlideShow =  require('../../__DATABASE/MODELS/slideSchema.js')
 const Subscriber = require('../../__DATABASE/MODELS/subscribedSchema')

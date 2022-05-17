@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require("bcryptjs")
 const jwt = require("jsonwebtoken")
+require("../../__DATABASE/SERVER/initialiseDB");
 const User = require('../../__DATABASE/MODELS/authSchema')
 const cookieParser = require('cookie-parser');
 router.use(cookieParser());

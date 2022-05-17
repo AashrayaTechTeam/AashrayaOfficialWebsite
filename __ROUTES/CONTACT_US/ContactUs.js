@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+require("../../__DATABASE/SERVER/initialiseDB");
 const Contact = require("../../__DATABASE/MODELS/contactUsSchema")
 
 router.post("/addContact" , async(req,res)=>{

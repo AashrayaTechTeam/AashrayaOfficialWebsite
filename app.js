@@ -1,14 +1,16 @@
+const dotenv = require("dotenv")
 const express = require('express')
 const app = express();
-const dotenv = require("dotenv")
-dotenv.config({path:"./config.env"});
+const PORT = process.env.PORT || 5000
 const path = require("path")
+dotenv.config({path:"./config.env"});
+
 app.use(express.json());
 app.use(express.urlencoded({extended:true}))
+
 require("./__DATABASE/SERVER/initialiseDB");
 
 
-const PORT = process.env.PORT || 5000
 
 // link the router files 
 app.use(require('./__ROUTES/TEAM_LISTING/Team'))
