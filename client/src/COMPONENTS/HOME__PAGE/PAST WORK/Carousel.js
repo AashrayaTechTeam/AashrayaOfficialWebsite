@@ -6,14 +6,17 @@ function Carousel() {
 
   return (
     <div>
-    <section id="testim" class="testim">
-    <div class="wrap">
+    <section id="testim" className="testim">
+    <div className="wrap">
     <img src={img} alt="project image" />
-      <div id="testim-content" class="content-project">
+      <div id="testim-content" className="content-project">
           <h2>Book Donation Drive</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-            <button ><Link style={{textDecoration:"none", color: "black"}} to="/BookDonationDrive">Explore</Link></button>
+          <p>As a part of our Spread Knowledge Campaign, we organized an All-India Book Donation Drive under 
+            the guidance of IAS Srushti Jayant Deshmukh and IAS Dr. Nagarjun B Gowda. 
+            The campaign was conducted in more than 25 states across the country with over 
+            4000 volunteers and donors joining us for a noble cause. With immense support, 
+            we collected around 1 lakh+ books.</p>
+            <Link style={{textDecoration:"none", color: "black"}} to="/BookDonationDrive"><button >Explore</button></Link>
         </div>
     </div>
   </section>

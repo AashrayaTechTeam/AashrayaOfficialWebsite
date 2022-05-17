@@ -1,4 +1,5 @@
 import React, { useState,useEffect } from 'react'
+import LoadingPage from '../../LoadingPage';
 
 function Career() {
 
@@ -73,7 +74,7 @@ function Career() {
 
 
   if(loading)
-  return <>Loading...</>
+  return <><LoadingPage/></>
 
   return (
     <div id="form-slide" className='box-container'>

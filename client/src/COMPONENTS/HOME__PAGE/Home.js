@@ -9,10 +9,11 @@ import Testimonial from './REVIEWS/Testimonial'
 import { Link } from 'react-router-dom'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-
+import LoadingPage from '../../LoadingPage'
+import chat from '../../ASSETS/chat-icon.png'
 function Home() {
     useEffect(() => {
-        Aos.init({ duration: 2000});
+        Aos.init({ duration: 500});
     }, []) ;
 
     const [posters,setPosters] = useState("");
@@ -42,24 +43,31 @@ function Home() {
 
 
     if(loading)
-      return <>Loading...</>
+      return <><LoadingPage/></>
+
+      // <span style={{margin:"auto",fontWeight:"bolder"}}>
+      // <a style={{textDecoration:"none",color:"white"}} href="https://api.whatsapp.com/send?phone=6264803084">Chat</a>
+      // </span>
+
 
     return (
         <>
-        <div style={{width:"70px",height:"70px",background:"linear-gradient(to right, #fc00ff, #00dbde)",margin:"20px",zIndex:"5",display:"flex",justifyContent:"center",borderRadius:"100%",position:"fixed",right:"0%",bottom:"0%",color:"black"}}><span style={{margin:"auto",fontWeight:"bolder"}}><a style={{textDecoration:"none",color:"white"}} href="https://api.whatsapp.com/send?phone=6264803084">Chat</a></span></div>
+        <div style={{width:"60px",height:"60px",background:"linear-gradient(to top, #fc00ff, #00dbde)",margin:"15px",zIndex:"5",display:"flex",justifyContent:"center",alignItems:"center",borderRadius:"100%",position:"fixed",right:"0%",bottom:"0%",color:"black"}}>
+         <img style={{width:"40px",height:"40px"}} src={chat} placeholder="Chat"/>
+         </div>
         <div style={{position:"relative", overflowX:"hidden"}}>
             <SlideShow/>
 
 
-            <div style={{background: "black",position:"relative"}}>
-            <h2 className='h2' style={{color:"white",textAlign:"center",top:"30px",padding:"10px",zIndex:"3",position:"relative"}} data-Aos="fade-down">{posters.poster[count-1].heading}</h2>
-            <div style={{width:"100%",margin:"auto",display:"flex",position:"relative",height:"650px",justifyContent:"center",alignItems:"center"}}>
-                <div style={{width:"60%"}} ><img style={{width:"1000px",height:"550px"}} src={posters.poster[count-1].imageUrl} data-Aos="zoom-in"/></div>
-                <div style={{color:"white", justifyContent:"center"}} >
-                    <p style={{margin:"auto 50px",letterSpacing:"3px",lineHeight:"20px",fontSize:"20px"}} data-Aos="fade-left">{posters.poster[count-1].smallPara}</p>
-                    <Link to="/poster" style={{textDecoration:"none"}}><h4 style={{textAlign:"center", color:"white" , position:"relative" , borderRadius:"5px",
-                    margin:"10px auto",padding:"7px", width:"40%",backgroundColor: "rgba(86, 195, 228, 0.74)",
-                    boxShadow:"inset", color:"black",cursor:"pointer"}} data-Aos="fade-up">See More</h4></Link>
+            <div className='poster-container'>
+            <h1  data-Aos="fade-down">{posters.poster[count-1].heading}</h1>
+            <div className='poster-body'>
+                <div className='poster-img' >
+                  <img  src={posters.poster[count-1].imageUrl} data-Aos="zoom-in"/>
+                </div>
+                <div className='poster-smallPara'>
+                    <p data-Aos="fade-left">{posters.poster[count-1].smallPara}</p>
+                    <Link to="/poster" ><h4 data-Aos="fade-up">See More</h4></Link>
                 </div>
             </div>
             

@@ -6,7 +6,7 @@ import 'aos/dist/aos.css'
 
 function About_us() {
     useEffect(() => {
-        Aos.init({ duration: 2000 });
+        Aos.init({ duration: 500 });
     }, []) ;
 
     return (
@@ -21,16 +21,10 @@ function About_us() {
 			</div> 
             <div className="content" data-Aos="fade-left">
                 <p>
-                    Aashraya is an independent student(s)
-                    Organization which aims it's efforts for
-                    the holistic welfare of all living beings.
-                    Aashraya is an independent student(s)Organization which aims it's efforts 
-                    for the holistic welfare of all living beings.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores 
-                    soluta sit perspiciatis culpa quis nulla vel dicta maxime dolore 
-                    optio minima officiis obcaecati aut, eius laborum corporis ducimus 
-                    officia nisi voluptas voluptatibus blanditiis ea! Lorem ipsum dolor 
-                    sit amet, consectetur adipisicing elit. Veniam, atque.
+                Team Aashraya is a non-profit and independently led student(s) organisation working for the
+holistic welfare of all living beings and is founded by <strong>Priyanshu Khemariya</strong>, President of the Team.
+We started as <strong>Maa Narmada Sena (MNS)</strong> in June 2019 to spread awareness about the conservation of the environment through plantation and cleanliness drives and later became <strong>Team Aashraya at NITK</strong> in October 2019.
+Our goals Shiksha, Paryavaran, Chikitsa, Vastra, and Shakti are all part of the holistic approach. This holistic approach and means for its practical implementation has been guided by <strong>IAS Srushti Jayant Deshmukh</strong>.
                 </p>
             </div>
 		</div>

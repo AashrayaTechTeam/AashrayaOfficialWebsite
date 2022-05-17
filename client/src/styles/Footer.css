@@ -4,7 +4,7 @@
     padding: 30px;
 }
 .footer-box > section{
-    margin: 0px 70px ;
+    margin: 0px 60px ;
     display: flex;
     flex-direction: column;
 }
@@ -13,6 +13,25 @@
     letter-spacing: 2px;
 }
 
+.logo-footer>img{
+    width: 150px;
+    border-radius: 20px;
+}
+
+.quick-link > a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    padding: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+.quick-link>a:hover{
+    color :black;
+}
+
+
+/* CONTATCT FORM */
 .contact-form{
     display: flex;
 }
@@ -23,15 +42,17 @@
 
 .contact-form > form >h3{
     margin-top: 10px;
+    font-size: 20px;
 }
 
 .contact-form > form > input {
     margin: 5px;
     padding: 7px;
-    width: 350px;
+    width: 300px;
     border: none;
+    font-size: 13px;
     border-radius: 5px;
-    background-color: rgb(7, 44, 62);
+  background-color: rgb(7, 44, 62);
     color: rgb(255, 255, 255);
 }
 
@@ -39,8 +60,9 @@
     margin: 5px;
     padding: 7px;
     border: none;
+    font-size: 13px;
     border-radius: 5px;
-    background-color: rgb(7, 44, 62);
+    background-color: rgb(5, 27, 38);
     color: white;
 }
 
@@ -53,6 +75,14 @@
     border: none;
 }
 
+
 .footer-bottom > p{
     letter-spacing: 2px;
+    font-size: 12px;
+    line-height: 25px;
+}
+.footer-bottom>p>a{
+    text-decoration: none;
+    color: rgb(0, 191, 255);
+    cursor: pointer;
 }

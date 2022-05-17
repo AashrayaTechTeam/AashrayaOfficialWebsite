@@ -12,6 +12,7 @@ import AddMember from './ADMINROUTES/AddMember'
 import AddAdmin from './ADMINROUTES/AddAdmin'
 import { AuthAdmin } from './AuthCheck'
 import Cookies from 'universal-cookie';
+import LoadingPage from '../LoadingPage'
 function AdminHandle() {
 
   const cookies = new Cookies();
@@ -21,8 +22,9 @@ function AdminHandle() {
   const removeToken = ()=>{
     cookies.remove("token")
     history.push("/");
+    window.alert("Log out successfully !")
     window.location.reload();
-
+    
   }
 
   // getting type of admin
@@ -31,7 +33,7 @@ function AdminHandle() {
 
   // if no admin is there, not alllow to enter 
   if(!role)
-    return <>Loading...</>
+    return <><LoadingPage/></>
 
 
   // if auth is there allow the admin
@@ -39,8 +41,8 @@ function AdminHandle() {
     <div style={{backgroundColor:"black",width:"100%",height:"auto",position:"absolute",top:"0%"}}>
         <div className='box-admin'>
         <div className='routes-for-admin'>
-          <h1>Hello, Himangshu</h1>
-          <ul>
+          <h1>Hello, Admin </h1>
+          <ul >
             <Link className="Link-tag" to="/admin/admin_handle/slideshow"><li>😊 Home Slideshow</li></Link>
             <Link className="Link-tag" to="/admin/admin_handle/banner"><li>😍 Home Banner</li></Link>
             <Link className="Link-tag" to="/admin/admin_handle/bdd"><li>🥰 BDD</li></Link>

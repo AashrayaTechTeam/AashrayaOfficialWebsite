@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import LoadingPage from '../../LoadingPage';
 
 function Career() {
     
@@ -22,24 +23,23 @@ function Career() {
         setLoading(false)
       },[])
 
-        console.log(jobs)
 
         if(loading)
-        return <>Loading...</>
+        return <><LoadingPage/></>
   return (
-    <div style={{position:"absolute",top:"0",backgroundColor:"black",width:"100%",minHeight:"100vh"}}>
+    <div style={{position:"absolute",top:"0",background:"linear-gradient(to right, #373b44, #4286f4)",width:"100%",minHeight:"100vh"}}>
         <h2 style={{textAlign:"center",color:"white",marginTop:"120px"}}>Apply for Job Profile</h2>
         <div className='container-box' >
-        <div className='banner-list'>
+        <div className='banner-list' style={{color:"black"}} >
     {
         jobs.getJob.map(jb=>{
             return(
-                <div style={{margin:"10px",backgroundColor:"white"}}>
+                <div style={{margin:"10px",background:"linear-gradient(to right, #1c92d2, #f2fcfe)"}}>
                     <div style={{margin:"20px"}}>
                       <span>{jb.heading}</span>
                         <span><ReactMarkdown  children={jb.Job} remarkPlugins={[remarkGfm]} /></span>
                     </div>
-                    <a href={jb.formLink} ><button className='btn btn-primary m-1'>Apply now</button></a>
+                    <a href={jb.formLink} ><button className='btn btn-dark m-1'>Apply now</button></a>
                 </div>
             )
         })

@@ -15,6 +15,7 @@ import Poster from "./COMPONENTS/HOME__PAGE/POSTER/Poster";
 import BookDonationDrive from "./COMPONENTS/HOME__PAGE/PAST WORK/BookDonationDrive";
 import Career from "./COMPONENTS/CAREER/Career";
 import PageNotFound from "./PageNotFound";
+import LoadingPage from "./LoadingPage";
 function App() {
   return (
     <Router>
@@ -29,6 +30,7 @@ function App() {
         <Route path="/join_us">
           <Join_us />
         </Route>
+        <Route path="/loading"><LoadingPage/></Route>
         <Route path="/saktiweek" component={SaktiWeek} />
         <Route path="/admin/admin_handle" >
         <AdminHandle/>

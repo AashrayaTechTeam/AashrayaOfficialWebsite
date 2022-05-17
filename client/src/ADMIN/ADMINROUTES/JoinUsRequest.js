@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-
+import LoadingPage from '../../LoadingPage'
 
 function JoinUsRequest() {
   const [joinUs,setJoinUs] = useState("");
@@ -20,7 +20,6 @@ function JoinUsRequest() {
     setLoading(false)
   },[])
 
-console.log(joinUs)
 
 //DELETE THE JOIN US FORM
 const deleteJoinForm = async(id)=>{
@@ -43,7 +42,7 @@ const deleteJoinForm = async(id)=>{
 
 
   if(loading)
-    return<>loading...</>
+    return<><LoadingPage/></>
 
   return (
     <div className='container-box'>

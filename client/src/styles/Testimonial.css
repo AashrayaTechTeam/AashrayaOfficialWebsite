@@ -1,3 +1,5 @@
+
+
 .mycard {
     height: 100%;
     width: 100%;
@@ -28,13 +30,16 @@
     text-align: center;
   }
   
-  body {
+  /* body {
     margin: 0;
     color: #fff;
     font-family: sans-serif;
     display: flex;
     align-items: center;
     min-height: 100vh;
+  } */
+  .container-reviews{
+    margin: 50px auto;
   }
   .slider {
     width: 100%;
@@ -45,6 +50,10 @@
   }
   .slider > h1{
     text-align:center;
+    color: black;
+    font-size: 40px;
+  font-family:'Allerta Stencil';
+
   }
   .testimonials {
     display: flex;

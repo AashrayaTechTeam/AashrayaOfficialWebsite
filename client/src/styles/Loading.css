@@ -1,0 +1,108 @@
+.box-loader{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    min-height: 110vh;
+}
+.loading-container{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+.message{
+color: white;
+position: absolute;
+top:40%;
+font-size: 25px;
+letter-spacing: 3px;
+font-family: 'Dancing Script', cursive;
+
+}
+.message1{
+  color: white;
+  position: absolute;
+  top:70%;
+  letter-spacing: 3px;
+  font-size: 25px;
+font-family: 'Dancing Script', cursive;
+  }
+.loading-container>span{
+    margin:3% ;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 3px solid #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  } 
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-bottom-color: #FF3D00;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+
+
+  .loader1 {
+    position: relative;
+    width: 64px;
+    height: 60px;
+  }
+  .loader1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    width: 64px;
+    height: 32px;
+    border-radius: 0 0 50px 50px;
+    animation: move 0.5s linear infinite alternate;
+  }
+  .loader1::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    background: #FF3D00;
+    width: 24px;
+    height: 24px;
+    transform: translateX(-50%) rotate(0deg);
+    animation: rotate 2s linear infinite;
+  }
+  
+  @keyframes rotate {
+    100% { transform: translateX(-50%) rotate(360deg)}
+  }
+  @keyframes move {
+    0% { transform: rotate(10deg)}
+    100% { transform: rotate(-10deg)}
+  }
+        

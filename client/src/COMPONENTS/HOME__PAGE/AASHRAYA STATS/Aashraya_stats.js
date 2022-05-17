@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 
 function Aashraya_stats() {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 500 });
   }, []);
 
   const [Email,setEmail] = useState("");
@@ -50,15 +50,12 @@ function Aashraya_stats() {
 
 
   return (
-    <div
-      className="text-stats"
-      style={{ textAlign: "center", paddingTop: "240px", color: "black" }}
-    >
+    <div className="text-stats">
       <h1 data-Aos="fade-down">Aashraya Stats</h1>
       <div
         style={{ height: "500px", display: "flex", justifyContent: "center" }}
       >
-        <div className="icon-stats" data-Aos="fade-right">
+        <div className="icon-stats icons" data-Aos="fade-right">
           <img src={volunteers} alt="icon" />
           <div style={{ margin: "30px 10px" }}>
             <h3>
@@ -68,7 +65,7 @@ function Aashraya_stats() {
           </div>
         </div>
 
-        <div className="icon-stats" data-Aos="fade-up">
+        <div className="icon-stats icons" data-Aos="fade-up">
           <img src={library} alt="icon" />
           <div style={{ margin: "30px 10px" }}>
             <h3>
@@ -78,7 +75,7 @@ function Aashraya_stats() {
           </div>
         </div>
 
-        <div className="icon-stats" data-Aos="fade-left">
+        <div className="icon-stats icons" data-Aos="fade-left">
           <img src={books} alt="icon" />
           <div style={{ margin: "30px 10px" }}>
             <h3>

@@ -44,53 +44,45 @@ function Join_us() {
 
     return (
         <div style={{backgroundColor:"blue !Important"}}>
-            <div style={{backgroundColor:"black",display:"flex",justifyContent:"center",position:"absolute",top:"0%",color:"white",margin:"auto",width:"100%"}}>
+            <div style={{background:"linear-gradient(to right, #0f2027, #203a43, #2c5364)",display:"flex",justifyContent:"center",position:"absolute",top:"0%",color:"white",margin:"auto",width:"100%"}}>
             <form style={{padding:"100px 0px",display:"flex" , flexDirection:"column"}}>
             <div style={{textAlign:"center"}}>
                 <h1>Join Us</h1>
             </div>
             <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">State</label>
                 <select value={State} onChange={(e)=>{setState(e.target.value)}} class="form-select" required aria-label="Default select example">
-                    <option selected disabled>State</option>
+                    <option  hidden>State</option>
                     <option value="Andra Pradesh">Andra Pradesh</option>
                     <option value="Assam">Assam</option>
                     <option value="Karnataka">Karnataka</option>
                 </select>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Name</label>
-                    <input value={Name} onChange={(e)=>{setName(e.target.value)}} 
+                    <input value={Name} onChange={(e)=>{setName(e.target.value)}} placeholder="Name"
                     type="text" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input value={Email} onChange={(e)=>{setEmail(e.target.value)}}
+                    <input value={Email} onChange={(e)=>{setEmail(e.target.value)}} placeholder="Email"
                     type="email" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="We'll never share your email with anyone else"/>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Mobile Number</label>
-                    <input value={mobileNumber} onChange={(e)=>{setMobileNumber(e.target.value)}}
+                    <input value={mobileNumber} onChange={(e)=>{setMobileNumber(e.target.value)}} placeholder="Mobile Number"
                     type="text" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="We'll never share your mobile number with anyone else"/>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Address</label>
-                    <input value={Address} onChange={(e)=>{setAddress(e.target.value)}}
+                    <input value={Address} onChange={(e)=>{setAddress(e.target.value)}} placeholder="Address"
                     type="text" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">City</label>
-                    <input value={City} onChange={(e)=>{setCity(e.target.value)}}
+                    <input value={City} onChange={(e)=>{setCity(e.target.value)}} placeholder="City"
                     type="text" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">District</label>
-                    <input value={District} onChange={(e)=>{setDistrict(e.target.value)}}
+                    <input value={District} onChange={(e)=>{setDistrict(e.target.value)}} placeholder="District"
                     type="text" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Pincode</label>
-                    <input value={Pin} onChange={(e)=>{setPin(e.target.value)}}
+                    <input value={Pin} onChange={(e)=>{setPin(e.target.value)}} placeholder="Pincode"
                     type="number" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                 </div>
                     <label class="form-check-label" for="exampleCheck1">Aru you ready to Volunteer for the welfare of humanity? </label>

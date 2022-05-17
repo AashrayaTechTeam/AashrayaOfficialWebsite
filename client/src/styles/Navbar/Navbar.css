@@ -11,13 +11,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
   }
   .nav-logo {
-    font-size: 36px;
+    font-size: 30px;
     color: #85c6d6;
   }
   .logo{
     cursor: pointer;
+    color:white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
   }
   
   /* nav-links */
@@ -25,7 +29,9 @@
     display: flex;
     list-style: none;
     justify-content: space-evenly;
-    width: 40%;
+    width: 50%;
+    position: relative;
+    top: 8px;
     gap: 1.4em;
   }
   a {
@@ -33,10 +39,12 @@
   }
   .nav-links li a {
     line-height: 2.5;
-    font-weight: 100;
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 2px;
     text-decoration: none;
     position: relative;
-    color: #85c6d6;
+    color: #ffffff;
     overflow: hidden;
     cursor: pointer;
   }
@@ -52,7 +60,7 @@
     z-index: -1;
     right: 0;
     width: 0;
-    bottom: -5px;
+    bottom: -7px;
     background: #e92d85;
     height: 4px;
     transition: all 0.6s ease-in-out;
@@ -71,8 +79,8 @@
   
   .nav-links > img {
     position:absolute;
-    right:-6%;
-    bottom: -16%;
-    width:140px;
+    right:-5%;
+    bottom: -29%;
+    width:130px;
 
   }

@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react'
+import LoadingPage from '../../LoadingPage';
 
 function ContactUs() {
 
@@ -46,7 +47,7 @@ function ContactUs() {
 
 
   if(loading)
-    return <>loading....</>;
+    return <><LoadingPage/></>;
   return (
     <div className='container-box'>
     <h2 className='heading border-bottom border-dark w-50 m-auto p-3'>Contact us Messages</h2>

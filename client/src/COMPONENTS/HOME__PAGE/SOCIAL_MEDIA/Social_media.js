@@ -10,14 +10,11 @@ import "aos/dist/aos.css";
 
 function Social_media() {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 500 });
   }, []);
   return (
-    <div
-      className="media-handels"
-      style={{ width: "100%", height: "300px", textAlign: "center" }}
-    >
-      <h1 style={{ padding: "120px", color: "black" }} data-Aos="fade-down">
+    <div className="media-handels">
+      <h1 data-Aos="fade-down">
         Social Media Handles
       </h1>
       <div className="social-icon" data-Aos="zoom-in">

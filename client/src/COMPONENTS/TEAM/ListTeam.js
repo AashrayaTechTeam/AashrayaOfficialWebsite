@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react'
+import LoadingPage from '../../LoadingPage'
 import "../../styles/Teamlist.css"
 function ListTeam() {
 
@@ -41,20 +42,23 @@ function ListTeam() {
         {
             const res = AllTeam.filter(element =>element.Designation===Designation)
             setTeam(res)
+            setState("")
         }
     if(State)
     {
         const res = AllTeam.filter(element =>element.State===State)
         setTeam(res)
+        setDesignation("")
     }
   }
 
+
   if(loading)
-    return<>Loading...</>
+    return<><LoadingPage/></>
 
 
   return (
-<div style={{backgroundColor:"black",width:"100%",top:"0%",height:"100vh",position:"absolute"}}>
+<div style={{background:"linear-gradient(to right, #2C5364, #203A43, #0F2027)",width:"100%",top:"0%",height:"100vh",position:"absolute"}}>
 
         <div class="dropdown dropdown-btn">
         <select value={Designation} onChange={(e)=>{setDesignation(e.target.value)}}

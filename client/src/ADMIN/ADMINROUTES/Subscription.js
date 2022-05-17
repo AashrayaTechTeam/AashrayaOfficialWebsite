@@ -1,5 +1,5 @@
 import React,{useEffect,useState} from 'react'
-
+import LoadingPage from '../../LoadingPage'
 function Subscription() {
 
   const [sub,setSub] = useState("");
@@ -22,7 +22,7 @@ function Subscription() {
   console.log(sub);
 
   if(loading)
-    return <>Loading...</>;
+    return <><LoadingPage/></>;
 
   return (
     <div className='container-box'>

@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import LoadingPage from '../../LoadingPage'
+
 function HomePageSlideshow() {
 
 
@@ -80,7 +82,7 @@ try{
   }
 
   if(loading)
-  return <>loading....</>;
+  return <><LoadingPage/></>;
 
 
 

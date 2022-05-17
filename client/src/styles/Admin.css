@@ -41,7 +41,7 @@
 
 
 .box-admin{
-    margin-top: 5%;
+    margin-top: 7%;
     min-height: 100vh;
     display: flex;
     background-image: linear-gradient(to bottom right, rgb(225, 101, 227),rgb(83, 171, 209));
@@ -55,16 +55,17 @@
     letter-spacing: 2px;
 }
 .routes-for-admin > h1{
-    margin:30px auto;
+    margin:20px auto;
     padding: 10px;
-    font-size: 25px;
-    /* background-color: rgb(16, 57, 57); */
-    border-bottom: solid 5px rgb(16, 57, 57);
+    font-size: 20px;
+    border-bottom: solid 5px rgb(61, 212, 212);
+    border-radius: 10px;
 }
 .routes-for-admin>ul{
     list-style: none;
-    line-height: 45px;
-    font-size: 17px;
+    line-height: 35px;
+    font-size: 13px;
+    font-weight: 300;
 }
 
 .Link-tag{

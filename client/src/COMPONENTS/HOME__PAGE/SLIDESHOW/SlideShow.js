@@ -2,6 +2,7 @@ import React, { useState ,useEffect} from "react";
 import { Button, Carousel, Image } from "react-bootstrap";
 import "./slideShow.css";
 import { Link } from "react-router-dom";
+import LoadingPage from "../../../LoadingPage";
 
 function SlideShow() {
 
@@ -24,11 +25,11 @@ function SlideShow() {
 
 
 if(loading)
-return <>Loading...</>
+return <><LoadingPage/></>
   return (
     <section>
       <div style={{backgroundColor:"black",height:"100vh",width:"100%",position:"absolute"}}></div>
-      <Carousel interval={3000} indicatorLabels={false} controls={false}>
+      <Carousel interval={2500} indicatorLabels={false} controls={false}>
         {slides.slide.map((element, i) => {
           return (
             <Carousel.Item style={{ height: "100vh" }}>
@@ -36,7 +37,7 @@ return <>Loading...</>
                 className="bg-image"
                 style={{
                   backgroundImage: `url(${element.imageUrl})`,
-                  opacity: "0.7",
+                  opacity: "0.6",
                 }}
               />
               <div className="bg-background">
@@ -45,9 +46,9 @@ return <>Loading...</>
                     <h1>{element.heading}</h1>
                     <p>{element.smallPara}</p>
                     <div className="joinUsDiv">
-                      <div className="joinUs">
+                    <Link to={element._id}><div className="joinUs">
                         <Link to={element._id}>See more</Link>
-                      </div>
+                      </div></Link>
                     </div>
                   </div>
                 </div>

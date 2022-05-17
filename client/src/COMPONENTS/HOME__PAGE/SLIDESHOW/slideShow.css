@@ -29,7 +29,7 @@
 
 .bg-text {
   position: absolute;
-  top: 75%;
+  top: 68%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
@@ -40,10 +40,18 @@
   letter-spacing: 3px;
 }
 .bg-text h1 {
-  font-size: 2.1rem;
+  font-size: 40px;
+  font-family: 'Alfa Slab One', cursive;
+  line-height: 65px;
+  letter-spacing: 3px;
+  text-align: center;
 }
 .bg-text p {
-  font-size: 16px;
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: justify;
+  letter-spacing: 2px;
+  line-height: 25px;
 }
 .joinUsDiv {
   display: flex;
@@ -53,14 +61,81 @@
 
 .joinUs {
   float: right;
-  border: 3px solid white;
-  padding: 10px 25px;
-  color: white;
+  border-radius: 7px;
+  padding: 10px 15px;
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+color: black;
   cursor: pointer;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+}
+.joinUs:hover{
+  background:linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
 }
 .joinUs a {
   text-decoration: none;
-  color: white;
-  font-size: 25px;
+  color: black;
+  font-size: 15px;
+  text-align: center;
   font-weight: bold;
+}
+
+
+/* SLIDE SHOW DETAIL PAGE */
+
+.post-container{
+  position:absolute;
+  top:0%;
+  background: #e96443;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #904e95, #e96443);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #904e95, #e96443); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* background:linear-gradient(to right, #0f2027, #203a43, #2c5364); */
+  min-height: 100vh;
+}
+.post-cover-img{
+  position:relative;
+  background-color:black;
+}
+.post-cover-img>img{
+  opacity:0.4;
+  width:100%;
+  height:350px;
+}
+.post-heading{
+  position:absolute;
+  top:0;
+  margin:120px auto;
+  width:100%;
+}
+.post-heading >h1{
+  text-align:center;
+  color:white;
+  margin:35px auto;
+  font-size: 35px;
+  font-family: 'Alfa Slab One', cursive  ;
+  letter-spacing:4px;
+  line-height: 45px;
+  width:60%;
+}
+.post-content{
+  position:relative;
+  color:rgb(255, 255, 255);
+  font-weight: 600px;
+  margin:30px auto;
+  width:70%;
+  text-align: justify;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  min-height:100vh ;
+  border-radius: 10px;
+  font-size: 15px;
+  line-height: 25px;
+  display:flex;
+  flex-direction:column;
+  justify-content:baseline;
 }

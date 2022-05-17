@@ -1,22 +1,26 @@
 .dropdown-btn{
     position: relative;
     display: flex;
-    justify-content: center;
-    top: 10%;
+    justify-content: left;
+    margin-top: 9%;
+    font-size: 15px;
+    margin-left: 3%;
 }
 .team-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     position: absolute;
-    top:20%;
+    top:25%;
     margin: 40px;
 }
 .card-team{
 
     display: flex;
-    background-color: rgba(19, 142, 230, 0.363);
-    padding: 10px;
+    background: #1A2980;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        padding: 10px;
     border-radius:10px;
     margin: 10px;
     height: auto;
@@ -24,9 +28,9 @@
 }
 
 .box-image > img{
-    width: 150px;
-    height: 150px;
-    border: solid 5px rgb(172, 42, 148);
+    width: 100px;
+    height: 100px;
+    border: solid 3px rgb(172, 42, 148);
     padding: 4px;
     border-radius: 100%;
 }
@@ -35,10 +39,15 @@
     display: flex;
     justify-content: center;
     letter-spacing: 2px;
-    line-height: 25px;
+    line-height: 23px;
     margin: 10px;
     flex-direction: column;
-    font-size: 15px;
     color: white;
-    font-family: 'Times New Roman', Times, serif !important;
+}
+.detail-of-member > span{
+    font-size: 12px;
+    text-align: justify;
+}
+.detail-of-member>strong{
+    font-size: 13px;
 }

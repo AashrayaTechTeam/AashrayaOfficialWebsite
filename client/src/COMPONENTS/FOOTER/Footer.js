@@ -37,26 +37,27 @@ function Footer() {
 
     return (
         <div style={{width:"100%" , height:"auto" ,padding:"20px 0px",position:"relative", background:"#144C6B" , color:"white" , textAlign:"center"}}>
-            <footer className='footer-box' style={{textDecoration:"none"}}>
-                <section>
-                    <img style={{width:"200px",borderRadius:"30px"}} src={img}/>
+            <footer className='footer-box'>
+                <section className='logo-footer'>
+                    <img  src={img}/>
                 </section>
                 <section className='quick-link'>
-                    <span>Donate</span>
-                    <span>Blogs</span>
-                    <span>Project</span>
-                    <span>Team</span>
-                    <span>Library</span>
+                    <Link to="/donate"><span>Donate</span></Link>
+                    <Link to="/blogs"><span>Blogs</span></Link>
+                    <Link to="/projects"><span>Project</span></Link>
+                    <Link to="/team"><span>Team</span></Link>
+                    <Link to="/library"><span>Library</span></Link>
                 </section>
-                <section className='Others'>
-                    <span>Disclaimer</span>
-                    <span>Privacy Policy</span>
-                    <span>Terms and Condition</span>
+                <section className='quick-link'>
+                    <Link to="/"><span>Disclaimer</span></Link>
+                    <Link to="/"><span>Privacy Policy</span></Link>
+                    <Link to="/"><span>Terms and Condition</span></Link>
                 </section>
-                <section className='Career'>
-                    <Link to="/career" style={{textDecoration:"none",color:"white", margin:"5px",letterSpacing:"2px"}}><span>Career</span></Link>
-                    <Link to="/join_us" style={{textDecoration:"none",color:"white",margin:"5px",letterSpacing:"2px"}}><span>Join as Volunteers</span></Link>
+                <section className='quick-link'>
+                    <Link to="/career"><span>Career</span></Link>
+                    <Link to="/join_us"><span>Join as Volunteers</span></Link>
                 </section>
+
                 <section className='contact-form'>
                     <form>
                         <h3>Subscribe Now</h3>
@@ -64,11 +65,11 @@ function Footer() {
                         <button onClick={submitHandle}>Send</button>
                     </form>
                 </section>
+                
             </footer>
             <div className='footer-bottom'>
-               <p>Thanks for your contribution for the wellbeing of the human race.</p>
-               <p> Copyright © 2022, All Rights Reserved | Build with ❤️ from Team Aashraya</p>
-               <Link to="/admin"><button className='btn p-4 ' style={{position:"absolute",background:"white",left:"0",bottom:"0",opacity:"0"}}>Admin</button></Link>
+               <p>Thanks for your contribution for the wellbeing of the human race.
+               <br/> Copyright © 2022, All Rights Reserved | Build with ❤️ from <Link to="/admin">Team Aashraya</Link></p>
             </div>
         </div>
     )

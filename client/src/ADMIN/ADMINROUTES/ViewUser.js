@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react'
+import LoadingPage from '../../LoadingPage';
 
 function ViewUser() {
 
@@ -22,7 +23,7 @@ function ViewUser() {
   console.log(admins)
 
   if(loading)
-  return <>Loading...</>
+  return <><LoadingPage/></>
   return (
     <div>
       <div className='container-box'>

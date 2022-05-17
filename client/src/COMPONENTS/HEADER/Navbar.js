@@ -30,9 +30,9 @@ function Navbar() {
         className="navbar"
         style={{
           background: "transparent",
-          padding: "40px",
+          padding: "35px",
           width: "100%",
-          height: "70px",
+          height: "80px",
           color: "white",
           position: "fixed",
           top: "0%",
@@ -40,17 +40,15 @@ function Navbar() {
           zIndex: "5"
         }}
       >
-        <Link to="/" style={{ textDecoration: "none" }}>
+        <Link to="/" style={{ textDecoration: "none"}}>
           <div class="nav-logo">
             <h3 class="logo">Aashraya</h3>
           </div>
         </Link>
-        {/* <Link to ="/admin" style={{textDecoration:"none", color:"white",cursor:"pointer"}}>Admin</Link> */}
-
         <ul
           class="nav-links"
           id="links"
-          style={{ position: "relative", right: "3%" }}
+          style={{ position: "relative", right: "5%" }}
         >
           {
             role ? <li><Link to="/admin/admin_handle/slideshow">Admin Dashboard</Link></li>:<></>
