@@ -28,7 +28,6 @@ function Poster() {
       },[])
 
       if(loading) return <>loading..</>
-
   return (
     <div style={{position:"absolute",top:"0"}}>
 

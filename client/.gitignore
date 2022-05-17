@@ -10,6 +10,9 @@ package-lock.json
 /coverage
 
 # production
+/build
+
+.gitpod.yml
 
 # misc
 .DS_Store
