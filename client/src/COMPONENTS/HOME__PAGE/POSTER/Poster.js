@@ -1,6 +1,4 @@
 import React,{useState,useEffect} from 'react'
-import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
 import LoadingPage from  '../../../LoadingPage'
 function Poster() {
 
@@ -43,7 +41,7 @@ function Poster() {
         </div>
 
         <div  className='post-content' >
-        <ReactMarkdown children={posters.poster[count-1].post} remarkPlugins={[remarkGfm]} />
+          <p dangerouslySetInnerHTML={{__html:posters.poster[count-1].post}}></p>
         </div>
     </div>
   )

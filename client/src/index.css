@@ -4,3 +4,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.jodit-status-bar{
+  visibility: hidden;
+}

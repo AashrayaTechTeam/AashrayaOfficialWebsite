@@ -1,13 +1,12 @@
 import React,{useState,useEffect} from'react'
 import { useParams } from 'react-router-dom';
-import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
 import '../HOME__PAGE/SLIDESHOW/slideShow.css'
 import LoadingPage from '../../LoadingPage'
+
 function SlideShow_detail() {
 
     const { id } = useParams();
-    const [ eventDetail , setEventDetail] = useState({});
+    const [ eventDetail , setEventDetail] = useState("");
         const [loading , setLoading] = useState(true);
         
         useEffect(async ()=>{
@@ -24,6 +23,7 @@ function SlideShow_detail() {
 
         },[id]);
 
+        console.log(eventDetail)
 
       if(loading) return <><LoadingPage/></>
 
@@ -38,11 +38,10 @@ function SlideShow_detail() {
 
         <div className='post-heading'>
             <h1>{eventDetail.event.heading}</h1>
-            {/* <p style={{textAlign:"center",color:"white",margin:"auto",letterSpacing:"2px",width:"60%"}}>{eventDetail.event.smallPara}</p> */}
         </div>
 
         <div className='post-content'>
-        <ReactMarkdown  children={eventDetail.event.post} remarkPlugins={[remarkGfm]} />
+          <p dangerouslySetInnerHTML={{__html:eventDetail.event.post}}></p>
         </div>
     </div>
   )

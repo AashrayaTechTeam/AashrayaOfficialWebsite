@@ -1,14 +1,26 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
+import JoditEditor from "jodit-react";
+
 
 function Bdd() {
+  const editor = useRef(null)
+	const [content, setContent] = useState()
+  const [post,setPost] = useState();
   return (
     <div className='container-box'>
-    <h2 className='heading border-bottom border-dark w-50 m-auto p-3'>Add paragraph about BDD</h2>
+    <h4 className='heading border-bottom border-dark w-50 m-auto p-3'>Add paragraph about BDD</h4>
     <div id="form-slide" className='box-container'>
     <form className='form-container'>
-    <textarea style={{padding:"10px",margin:"10px",border:"none",borderRadius:"7px",height:"500px"}} type="text" placeholder='Writer here about the event' />
+      <JoditEditor ref={editor}
+                value={content}
+                tabIndex={1}
+		            onBlur={newContent => setContent(newContent)}
+                onChange= {content=>{setPost(content)}} />
     <input type="Submit" className='btn btn-dark' />
     </form>
+    <div style={{width:"90%",position:"relative"}}>
+      <p style={{lineHeight:"23px",overflowX:"hidden"}} dangerouslySetInnerHTML={{ __html:post }}></p>
+    </div>
     </div>
   </div>
   )
