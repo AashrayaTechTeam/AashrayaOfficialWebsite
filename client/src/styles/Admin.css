@@ -13,6 +13,10 @@
 .form-container{
     display: flex;
     flex-direction: column;
+    border-radius: 7px;
+    margin: 15px;
+    margin: 15px;
+    background-color: white;
 }
 .form-container > h1{
     color: white;
@@ -24,12 +28,40 @@
     margin: 10px;
     width: 600px;
     border-radius: 7px;
-    border: none;
+
+    border: solid 2px rgb(120, 120, 120);
 }
 .form-container > button{
     padding: 10px;
     margin: 10px;
 }
+.form-container > textarea{
+    border: solid 2px rgb(120, 120, 120);
+    padding:10px;
+    margin:10px;
+    border-radius:7px;
+    height: 150px;
+}
+
+.form-container > span{
+    font-weight: 600;
+    margin: auto 10px;
+}
+
+.jodit-react-container{
+    position: relative;
+    height: auto;
+    overflow-x: hidden;
+    padding:10px;
+    border:solid 2px rgb(120, 120, 120);
+    border-radius:7px;
+    margin: 10px;
+}
+
+.jodit-workplace{
+    background-color: rgb(127, 242, 255);
+}
+
 .link{
     cursor: pointer;
     color: white;

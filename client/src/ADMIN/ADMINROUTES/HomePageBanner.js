@@ -1,11 +1,14 @@
-import React,{useState} from 'react'
+import JoditEditor from 'jodit-react';
+import React,{useRef, useState} from 'react'
+
 function HomePageBanner() {
 
   const [heading,setHeading] =useState("");
   const [imageUrl,setImageUrl] =useState("");
   const [smallPara,setSmallPara] =useState("");
   const [post,setPost] =useState("");
-
+  const editor = useRef(null)
+	const [content, setContent] = useState()
 
   //add poster
   const submitHandle = async(e) =>{
@@ -40,18 +43,22 @@ function HomePageBanner() {
 
   return (
     <div className='container-box'>
-    <h2 className='heading border-bottom border-dark w-50 m-auto p-3'>Add Event Poster</h2>
+    <h4 className='heading border-bottom border-dark w-50 m-auto p-3'>Add Event Poster</h4>
     <div id="form-slide" className='box-container'>
 
     <form className='form-container'>
     <input value={heading} onChange={(e)=>{setHeading(e.target.value)}} 
     type="text" placeholder='Heading' />
     <input value={imageUrl} onChange={(e)=>{setImageUrl(e.target.value)}}
-    type="text" placeholder='Image url' />
+    type="text" placeholder='Cover image url' />
     <textarea value={smallPara} onChange={(e)=>{setSmallPara(e.target.value)}}
-    style={{padding:"10px",margin:"10px",border:"none",borderRadius:"7px"}} type="text" placeholder='Write a small paragraph here' />
-    <textarea value={post} onChange={(e)=>{setPost(e.target.value)}}
-    style={{padding:"10px",margin:"10px",border:"none",borderRadius:"7px",height:"500px"}} type="text" placeholder='Write post here about the event' />
+    type="text" placeholder='Write a small paragraph here...' />
+    <span>Write post here..</span>
+    <JoditEditor ref={editor}
+                value={content}
+                tabIndex={1}
+		            onBlur={newContent => setContent(newContent)}
+                onChange= {content=>{setPost(content)}} />
     <button onClick={submitHandle} className='btn btn-dark'>Submit</button>
     </form>
 

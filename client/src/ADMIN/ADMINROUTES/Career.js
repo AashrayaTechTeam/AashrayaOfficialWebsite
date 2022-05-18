@@ -1,4 +1,5 @@
-import React, { useState,useEffect } from 'react'
+import JoditEditor from 'jodit-react';
+import React, { useState,useEffect, useRef } from 'react'
 import LoadingPage from '../../LoadingPage';
 
 function Career() {
@@ -8,7 +9,8 @@ function Career() {
   const [heading ,setHeading] = useState("");
   const [jobs,setJobs] = useState("");
   const [loading,setLoading] = useState(true);
-
+  const editor = useRef(null)
+	const [content, setContent] = useState()
 
     useEffect( async()=>{
         const res = await fetch("/getCareer" , {
@@ -93,8 +95,12 @@ function Career() {
     type="text" placeholder='Heading' />
     <input value={formLink} onChange={(e)=>{setFormLink(e.target.value)}} 
     type="text" placeholder='Link of google form' />
-    <textarea value={Job} onChange={(e)=>{setJob(e.target.value)}}
-    style={{padding:"10px",margin:"10px",border:"none",borderRadius:"7px",height:"500px"}} type="text" placeholder='Write post here about the event' />
+    <span>Write post here..</span>
+    <JoditEditor ref={editor}
+                value={content}
+                tabIndex={1}
+		            onBlur={newContent => setContent(newContent)}
+                onChange= {content=>{setJob(content)}} />
     <button onClick={submitHandle} className='btn btn-dark'>Submit</button>
     </form>
 

@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect,useRef } from 'react'
 import LoadingPage from '../../LoadingPage'
+import JoditEditor from "jodit-react";
 
 function HomePageSlideshow() {
 
@@ -16,6 +17,9 @@ function HomePageSlideshow() {
   const [post,setPost] =useState("");
   const [slides,setSlides] = useState("");
   const [loading,setLoading] = useState(true);
+
+  const editor = useRef(null)
+	const [content, setContent] = useState()
   
   //add new slides
   const submitHandle = async(e) =>{
@@ -106,11 +110,15 @@ try{
     <input value={heading} onChange={(e)=>{setHeading(e.target.value)}} 
     type="text" placeholder='Heading' />
     <input value={imageUrl} onChange={(e)=>{setImageUrl(e.target.value)}}
-    type="text" placeholder='Image url' />
+    type="text" placeholder='Cover image url' />
     <textarea value={smallPara} onChange={(e)=>{setSmallPara(e.target.value)}}
-    style={{padding:"10px",margin:"10px",border:"none",borderRadius:"7px"}} type="text" placeholder='Write a small paragraph here' />
-    <textarea value={post} onChange={(e)=>{setPost(e.target.value)}}
-    style={{padding:"10px",margin:"10px",border:"none",borderRadius:"7px",height:"500px"}} type="text" placeholder='Write post here about the event' />
+     type="text" placeholder='Write a small paragraph here...' />
+    <span>Write post here..</span>
+    <JoditEditor ref={editor}
+                value={content}
+                tabIndex={1}
+		            onBlur={newContent => setContent(newContent)}
+                onChange= {content=>{setPost(content)}} />
     <button onClick={submitHandle} className='btn btn-dark'>Submit</button>
     </form>
 
