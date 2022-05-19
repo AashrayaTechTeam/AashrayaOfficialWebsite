@@ -10,7 +10,7 @@ function Carousel() {
     <div className="wrap">
     <img src={img} alt="project image" />
       <div id="testim-content" className="content-project">
-          <h2>Book Donation Drive</h2>
+          <h1>Book Donation Drive</h1>
           <p>As a part of our Spread Knowledge Campaign, we organized an All-India Book Donation Drive under 
             the guidance of IAS Srushti Jayant Deshmukh and IAS Dr. Nagarjun B Gowda. 
             The campaign was conducted in more than 25 states across the country with over 

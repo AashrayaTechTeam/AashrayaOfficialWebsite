@@ -39,8 +39,8 @@
   }
   .nav-links li a {
     line-height: 2.5;
-    font-weight: 300;
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 11px;
     letter-spacing: 2px;
     text-decoration: none;
     position: relative;
@@ -80,7 +80,7 @@
   .nav-links > img {
     position:absolute;
     right:-5%;
-    bottom: -29%;
+    bottom: -37%;
     width:130px;
 
   }

@@ -4,7 +4,6 @@ function Poster() {
 
     const [posters,setPosters] = useState("");
     const [loading,setLoading] = useState(true);
-    const [count,setCount] = useState(0);
 
     useEffect( async()=>{
         const res = await fetch("/getPoster" , {
@@ -17,12 +16,6 @@ function Poster() {
         });
         const data = await res.json();
         setPosters(data);
-        let cnt = 0
-        data.poster.map(poster=>{
-            if(poster)
-            cnt++;
-        })
-        setCount(cnt);
         setLoading(false)
       },[])
 
@@ -31,17 +24,17 @@ function Poster() {
   return (
     <div className='post-container' >
 
-        <div className='post-cover-img' >
+        <div className='post-cover-img'>
             <img 
-            src={posters.poster[count-1].imageUrl} placeholder="image" />
+            src={posters.poster.slice(0,1).shift().imageUrl} placeholder="image" />
         </div>
 
-        <div className='post-heading' >
-            <h1>{posters.poster[count-1].heading}</h1>
+        <div className='post-heading'>
+            <h1>{posters.poster.slice(0.1).shift().heading}</h1>
         </div>
 
-        <div  className='post-content' >
-          <p dangerouslySetInnerHTML={{__html:posters.poster[count-1].post}}></p>
+        <div  className='post-content'>
+          <p dangerouslySetInnerHTML={{__html:posters.poster.slice(0,1).shift().post}}></p>
         </div>
     </div>
   )

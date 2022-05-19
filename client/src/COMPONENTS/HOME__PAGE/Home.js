@@ -52,8 +52,8 @@ function Home() {
 
     return (
         <>
-        <div style={{width:"60px",height:"60px",background:"linear-gradient(to top, #fc00ff, #00dbde)",margin:"15px",zIndex:"5",display:"flex",justifyContent:"center",alignItems:"center",borderRadius:"100%",position:"fixed",right:"0%",bottom:"0%",color:"black"}}>
-         <img style={{width:"40px",height:"40px"}} src={chat} placeholder="Chat"/>
+        <div style={{width:"50px",height:"50px",background:"linear-gradient(to top, #fc00ff, #00dbde)",margin:"15px",zIndex:"5",display:"flex",justifyContent:"center",alignItems:"center",borderRadius:"100%",position:"fixed",right:"0%",bottom:"0%",color:"black"}}>
+         <a href="https://api.whatsapp.com/send?phone=6264803084"><img style={{width:"30px",height:"30px"}} src={chat} placeholder="Chat"/></a>
          </div>
         <div style={{position:"relative", overflowX:"hidden"}}>
             <SlideShow/>

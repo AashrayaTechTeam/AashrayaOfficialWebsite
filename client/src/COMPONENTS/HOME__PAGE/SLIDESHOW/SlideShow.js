@@ -23,21 +23,21 @@ function SlideShow() {
     setLoading(false)
   },[])
 
-
 if(loading)
 return <><LoadingPage/></>
   return (
     <section>
       <div style={{backgroundColor:"black",height:"100vh",width:"100%",position:"absolute"}}></div>
       <Carousel interval={2500} indicatorLabels={false} controls={false}>
-        {slides.slide.map((element, i) => {
+        {slides.slide.slice(0,5).reverse().map((element) => {
+
           return (
             <Carousel.Item style={{ height: "100vh" }}>
               <div
                 className="bg-image"
                 style={{
                   backgroundImage: `url(${element.imageUrl})`,
-                  opacity: "0.6",
+                  opacity: "0.7",
                 }}
               />
               <div className="bg-background">

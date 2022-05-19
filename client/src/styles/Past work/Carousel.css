@@ -64,12 +64,11 @@ opacity: 0.5;
   width: 60%;
   color: rgb(226, 243, 255);
 }
-.content-project > h2{
+.content-project > h1{
   text-align: center;
-  font-size: 40px;
-  font-family:'Allerta Stencil';
+  font-family: 'Bebas Neue', cursive;
   letter-spacing: 3px;
-  margin-bottom: 30px;
+  font-size: 50px;
 }
 
 .content-project > p{

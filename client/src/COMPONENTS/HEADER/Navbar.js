@@ -55,7 +55,7 @@ function Navbar() {
           }
           
           <li>
-            <Link to="/saktiweek">Projects</Link>
+            <Link to="/projects">Projects</Link>
           </li>
           <li>
             <Link to="/saktiweek">Blog</Link>

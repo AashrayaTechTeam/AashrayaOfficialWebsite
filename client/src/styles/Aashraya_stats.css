@@ -22,8 +22,9 @@
 .text-stats > h1{
   padding-top:120px;
   color:black;
-  font-size: 40px;
-  font-family:'Allerta Stencil';
+  font-size: 50px;
+	font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
   text-align: center;
 }
 .icons{
@@ -98,4 +99,6 @@ font-size: 20px;
 text-align: center;
 color: white;
 font-size: 35px;
+font-family: 'Bebas Neue', cursive;
+letter-spacing: 2px;
 }

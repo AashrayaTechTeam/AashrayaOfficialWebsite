@@ -1,0 +1,117 @@
+
+.box-project{
+    position: absolute;
+    /* padding:8%; */
+    display:flex;
+    flex-wrap:wrap;
+    /* background:black; */
+    width:100%;
+    color:white;
+    background: #bc4e9c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100vh;
+}
+.nav-bg{
+    width:100%;
+    height:120px;
+    background:black;
+    margin-bottom: 10px;
+}
+.container-project{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background: rgba(255, 255, 255, 0.90);
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 20px;
+	height: 300px;
+	width: 45%;
+    cursor: pointer;
+    transition: all 0.6s ease-out;
+}
+
+.product-details {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 20px;
+	height: 100%;
+	float: left;
+	width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.product-details > span{
+    color: #000000;
+    padding: 10px 0px;
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.container-project .product-details h1{
+	font-family: 'Bebas Neue', cursive;
+	display: inline-block;
+    letter-spacing: 2px;
+	position: relative;
+	font-size: 20px;
+	color: #344055;
+	margin: 0;
+}
+
+
+.product-details > p {
+	text-align: justify;
+	font-size: 12px;
+    opacity: 0.7;
+    height: 250px;
+    overflow: hidden;
+	color: #000000;
+}
+
+.product-details > a >button{
+    font-size: 12px;
+    opacity: 0.7;
+    padding: 5px;
+    width: 100%;
+    background-color: #1b2d4d;
+    border: none;
+    color: white;
+    border-radius: 3px;
+
+}
+
+.product-image {
+	transition: all 0.3s ease-out;
+	display: flex;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	float: right;
+	width: 45%;
+}
+.container-project:hover{
+    transform: scale(0.95);
+}
+
+.product-image > img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.box-project > button {
+    width: 15%;
+    height: 50px;
+    margin: auto 30px;
+    font-size: 12px;
+    padding: 3px;
+    background-color: #1b2d4d;
+    border: none;
+    color: white;
+    border-radius: 3px;
+}
+
