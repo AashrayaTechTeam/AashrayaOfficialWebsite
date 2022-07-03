@@ -14,9 +14,7 @@ function Social_media() {
   }, []);
   return (
     <div className="media-handels">
-      <h1 data-Aos="fade-down">
-        Social Media Handles
-      </h1>
+      <h1 data-Aos="fade-down">Social Media Handles</h1>
       <div className="social-icon" data-Aos="zoom-in">
         <a href="https://www.instagram.com/aashraya_07/">
           <img src={instagram} alt="Instagram" />
@@ -32,6 +30,7 @@ function Social_media() {
         </a>
       </div>
     </div>
+    
   );
 }
 

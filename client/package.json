@@ -2,7 +2,7 @@
   "name": "responsive-website",
   "version": "0.1.0",
   "private": true,
-  "proxy":"http://localhost:5000/",
+  "proxy": "https://aashraya07.herokuapp.com/",
   "dependencies": {
     "@mui/icons-material": "^5.6.2",
     "@testing-library/jest-dom": "^5.14.1",
@@ -20,6 +20,7 @@
     "react-router-dom": "^5.3.0",
     "react-scripts": "^4.0.3",
     "remark-gfm": "^3.0.1",
+    "sass": "^1.53.0",
     "universal-cookie": "^4.0.4",
     "web-vitals": "^1.1.2"
   },

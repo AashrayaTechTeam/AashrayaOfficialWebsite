@@ -1,0 +1,503 @@
+@media screen and (max-width: 600px) {
+  /*navbar*/
+  .navbar {
+    margin-bottom: 30px;
+  }
+  .nav-links {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  /* hamburger menu */
+
+  /* slideshow */
+  .logo {
+    font-size: 50px;
+  }
+  .carousel-inner {
+    height: 50%;
+  }
+  .bg-text div {
+    top: 12%;
+  }
+  .bg-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 100%;
+    padding: 55px;
+    color: white;
+    line-height: 28px;
+    letter-spacing: 3.2px;
+  }
+  .bg-text h2 {
+    font-size: 2.5rem;
+    margin: 9px;
+  }
+  .bg-text p {
+    font-size: 1.5rem;
+    padding: 24px;
+  }
+  .joinUsDiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .joinUs a {
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+  .joinUs {
+    border: 3px solid white;
+    padding: 10px 25px;
+    color: white;
+    cursor: pointer;
+  }
+
+  /*shakti week*/
+  .container {
+    flex-direction: column;
+  }
+  .h2 {
+    font-size: 45px;
+    top: 0;
+    margin-bottom: 45px;
+  }
+  .para {
+    letter-spacing: 2.5px;
+    line-height: 30px;
+    font-size: 25px;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 3%;
+  }
+
+  /*about us*/
+  .box {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .heading {
+    position: relative;
+    display: inline;
+    text-align: center;
+    font-family: -webkit-body;
+    margin-left: 33%;
+    margin-top: 2%;
+  }
+
+  .heading h1 {
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .img {
+    display: flex;
+    position: relative;
+    margin-left: 1%;
+  }
+  .img > img {
+    height: 230px;
+    width: 260px;
+  }
+  .content {
+    position: relative;
+    letter-spacing: 2.5px;
+    line-height: 35px;
+    font-size: 25px;
+    padding: 25px;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  /* Our Mentors */
+  .testimonials {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .slider h1 {
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .cardtitle {
+    font-size: 30px;
+  }
+  .carddescription {
+    font-size: 22px;
+  }
+  .cardimg {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    max-height: 7rem;
+    border-radius: 9999px;
+  }
+
+  /* pastworks - bdd */
+  .content-project {
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    width: 62%;
+  }
+  .content-project > h2 {
+    font-size: 60px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+  }
+  .content-project > p {
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    padding: 25px;
+  }
+  .content-project > button {
+    font-size: 24px;
+    width: 25%;
+    padding: 7px;
+    border-radius: 5px;
+  }
+
+  /* social media handles */
+  .media-handels h1 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: -15px;
+  }
+  .social-icon > a > img {
+    width: 190px;
+  }
+
+  /* Aashraya stats */
+
+  .text-stats h1 {
+    margin-top: 15px;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .icon-stats img {
+    width: 180px;
+  }
+  .icon-stats {
+    width: 150px;
+  }
+  .icon-stats h3 {
+    font-size: 35px;
+  }
+
+  /* contact us */
+
+  .contact-form-all > div > img {
+    visibility: hidden;
+  }
+  .form-container-box {
+    height: 500px;
+    margin-right: 35%;
+  }
+  .form-container-box > input {
+    font-size: 28px;
+    padding: 9px;
+    margin: 9px;
+  }
+  .form-container-box > button {
+    margin-top: 18px;
+    padding: 10px;
+  }
+
+  /* footer */
+  .footer-box > section > span {
+    font-size: 25px;
+    margin: 3px;
+    letter-spacing: 2px;
+  }
+  .contact-form h3 {
+    font-size: 40px;
+  }
+  .contact-form {
+    font-size: 24px;
+  }
+  .footer-bottom {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  /* slider */
+  .bg-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 10px;
+  }
+  .bg-text h1 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  .bg-text p {
+    font-size: 12px;
+    line-height: 1rem;
+    padding: 10px;
+    margin: 0px;
+  }
+  .joinUsDiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .joinUs {
+    display: flex;
+    justify-content: center;
+    border: 3px solid white;
+    padding: 5px 25px;
+    color: white;
+    cursor: pointer;
+  }
+  .joinUs a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .joinUs a:hover {
+    color: white;
+  }
+  /* women's day special */
+
+  .poster-img > img {
+    width: 350px;
+  }
+  .poster-smallPara {
+    color: white;
+    justify-content: center;
+  }
+  .poster-smallPara > p {
+    margin: 0px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: justify;
+    padding: 10px;
+  }
+
+  .poster-smallPara > a {
+    text-decoration: none;
+    margin: 10px;
+  }
+  .poster-smallPara > a > h4 {
+    text-align: center;
+    color: white;
+    position: relative;
+    border-radius: 5px;
+    margin: auto;
+    padding: 7px;
+    width: 30%;
+    background-color: rgba(86, 195, 228, 0.74);
+    box-shadow: inset;
+    color: black;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  .poster-smallPara > a > h4:hover {
+    background: #0f2027; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #2c5364,
+      #203a43,
+      #0f2027
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #2c5364,
+      #203a43,
+      #0f2027
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+  }
+
+  /* about us */
+
+  .content {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .content > p {
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    text-align: justify;
+  }
+  /* Book donation drive */
+  .content-project {
+    width: 90%;
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      padding: 10px;
+      line-height: 20px;
+      letter-spacing: 0px;
+      font-size: 16px;
+    }
+  }
+  // social media handles
+  .media-handels h1 {
+    padding: 50px;
+    color: black;
+    font-family: "Bebas Neue", cursive;
+    letter-spacing: 3px;
+    font-size: 50px;
+    text-align: center;
+  }
+  .social-icon {
+    display: flex;
+    justify-content: center;
+  }
+  .social-icon > a > img {
+    width: 50px;
+    margin: auto 10px;
+    transition: all 0.4s ease-in-out;
+  }
+  .social-container {
+    transition: all 0.6s ease-in-out;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .social-icon > a > img:hover {
+    transform: rotate(-10deg);
+  }
+
+  //stats
+
+  .icon-stats {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 10px;
+    justify-content: center;
+  }
+  .icon-stats > img {
+    transition: all 0.4s ease-in-out;
+    width: 40px;
+    margin: auto;
+  }
+  .icon-stats > img:hover {
+    transform: scale(1.2);
+  }
+  .text-stats {
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    color: black;
+  }
+  .text-stats > h1 {
+    padding-top: 120px;
+    color: black;
+    font-size: 50px;
+    font-family: "Bebas Neue", cursive;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  .icons {
+    width: 90px;
+    height: 80px;
+  }
+  .icons > div > h3 {
+    font-size: 20px;
+  }
+  //contact us
+
+  .contact-form-all {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .form-container-box {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 20px;
+    height: 400px;
+    width: 100%;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  }
+
+  .form-container-box > input {
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 7px;
+    font-family: "Dancing Script", cursive;
+    border: none;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .form-container-box > textarea {
+    margin: 5px;
+    padding: 5px;
+    height: 130px;
+    width: 100%;
+    border-radius: 7px;
+    font-family: "Dancing Script", cursive;
+    border: none;
+    background-color: white;
+  }
+  .form-container-box > button {
+    margin: 5px;
+    padding: 7px;
+    width: 100%;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    background-color: rgb(8, 85, 120);
+  }
+
+  .form-container-box > h1 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-family: "Bebas Neue", cursive;
+    letter-spacing: 2px;
+  }
+  .testimonials .item {
+    max-width: 16rem;
+    border-radius: 1.5rem;
+    border-width: 2px;
+    --tw-border-opacity: 1;
+    border-color: rgba(30, 58, 138, var(--tw-border-opacity));
+    top: 0;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 10px;
+    width: 400px;
+    text-align: center;
+    transition: transform 0.4s;
+    -webkit-transform-style: preserve-3d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    user-select: none;
+    cursor: pointer;
+  }
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}

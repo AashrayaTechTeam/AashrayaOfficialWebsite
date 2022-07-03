@@ -61,7 +61,8 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    min-height: 430px;
+    height: 400px;
+    overflow: hidden;
     perspective: 500px;
     margin-top: 5rem;
     /* overflow: hidden; */
@@ -78,6 +79,7 @@
     background-color: #fff;
     padding: 30px;
     width: 450px;
+    height: 350px;
     text-align: center;
     transition: transform 0.4s;
     -webkit-transform-style: preserve-3d;
