@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./COMPONENTS/HEADER/Navbar";
 import Home from "./COMPONENTS/HOME__PAGE/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../src/styles/Responsive2.css"
+import "../src/styles/Responsive2.scss"
 // import Footer from './COMPONENTS/FOOTER/Footer';
 import Admin from "./ADMIN/Admin";
 import Join_us from "./COMPONENTS/JOIN US/Join_us";

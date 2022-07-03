@@ -15,47 +15,44 @@
   font-size: 15px;
   text-align: center;
   font-weight: bold;
-  text-align:center;
-  padding-top:180px;
+  text-align: center;
+  padding-top: 180px;
   color: black;
 }
-.text-stats > h1{
-  padding-top:120px;
-  color:black;
+.text-stats > h1 {
+  padding-top: 120px;
+  color: black;
   font-size: 50px;
-	font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   letter-spacing: 2px;
   text-align: center;
 }
-.icons{
+.icons {
   width: 90px;
   height: 80px;
 }
-.icons>div>h3{
-font-size: 20px;
+.icons > div > h3 {
+  font-size: 20px;
 }
 
 /* CONTACT FORM */
 
-.contact-form-all{
-  padding-top: -50px ;
-  padding-bottom: 130px;
-  box-shadow: inset;
+.contact-form-all {
   display: flex;
   justify-content: center;
-  position:relative;
   left: 0%;
   color: black;
+  background-color: black;
   height: auto;
 }
 
-.contact-form-all > div >img{
+.contact-form-all > div > img {
   width: 500px;
   height: 400px;
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
 }
-.form-container-box{
+.form-container-box {
   display: flex;
   flex-direction: column;
   background-color: black;
@@ -72,7 +69,7 @@ font-size: 20px;
   padding: 5px;
   width: 500px;
   border-radius: 7px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   border: none;
   background-color: rgb(255, 255, 255);
 }
@@ -82,7 +79,7 @@ font-size: 20px;
   padding: 5px;
   height: 130px;
   border-radius: 7px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   border: none;
   background-color: white;
 }
@@ -95,10 +92,10 @@ font-size: 20px;
   background-color: rgb(8, 85, 120);
 }
 
-.form-container-box > h1{
-text-align: center;
-color: white;
-font-size: 35px;
-font-family: 'Bebas Neue', cursive;
-letter-spacing: 2px;
+.form-container-box > h1 {
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
 }

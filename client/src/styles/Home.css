@@ -33,19 +33,17 @@ background: linear-gradient(to top, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Fir
 }
 
 /* SOCIAL MEDIA ICONS */
-.media-handels{
-  position: relative;
-  width: 100%;
-  height: 200px;
-  text-align:center;
-}
 .media-handels h1 {
-  padding:120px;
+  padding:100px;
   color:black;
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 3px;
   font-size: 50px;
   text-align: center;
+}
+.social-icon {
+  display: flex;
+  justify-content: center;
 }
 .social-icon > a > img {
   width: 120px;
@@ -92,14 +90,15 @@ background: linear-gradient(to top, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Fir
   justify-content:center;
   align-items:center;
 }
+.poster-img {
+  display: flex;
+  justify-content: center;
 
-.poster-img{
-  width:50%;
 }
-
 .poster-img > img{
-  width:700px;
-  height:400px;
+  width:500px;
+  height:'inherit';
+  margin: "auto";
 }
 
 .poster-smallPara{
@@ -111,7 +110,6 @@ background: linear-gradient(to top, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Fir
   letter-spacing:2px;
   line-height:25px;
   font-size:14px;
-  width: 80%;
   text-align: justify;
 }
 

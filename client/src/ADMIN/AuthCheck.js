@@ -4,7 +4,7 @@ function AuthAdmin() {
 
 const [auth ,setAuth] = useState("");
 
-  useEffect(async()=>{
+  useEffect(async ()=>{
 
     try{
       const res = await fetch("/userLoggedIn" , {
