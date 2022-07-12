@@ -1,7 +1,8 @@
 @media screen and (max-width:600px) {
     /*navbar*/
     .navbar{
-        margin-bottom: 30px;
+        margin-top: 0px;
+        margin-left: 0px;
     }
     .nav-links {
       opacity: 0;
@@ -13,7 +14,7 @@
 
     /* slideshow */
     .logo{
-        font-size: 50px;
+        font-size: 40px;
     }
     .carousel-inner{
         height: 50%;
@@ -23,23 +24,30 @@
     }
     .bg-text {
         position: absolute;
-        top: 55%;
-        left: 50%;
+        top: 50%;
+        /* left: 45%; */
         transform: translate(-50%, -50%);
-        width: 80%;
+        width: 100%;
         height: 100%;
-        padding: 55px;
+        /* padding: 50px; */
         color: white;
-        line-height: 28px;
-        letter-spacing: 3.2px;
+        line-height: 14px;
+        letter-spacing: 3px;
     }
+    .bg-text h1{
+        font-size: 25px;
+        letter-spacing: 2px;
+        line-height: 32px;
+        margin-top: 4%;
+    }
+
     .bg-text h2 {
-        font-size: 2.5rem;
+        font-size: 18px;
         margin: 9px;
     }
     .bg-text p {
-        font-size: 1.5rem;
-        padding: 24px;
+        font-size: 15px;
+        padding: 15px;
     }
     .joinUsDiv {
         display: flex;
@@ -47,7 +55,7 @@
         width: 100%;
     }
     .joinUs a {
-        font-size: 35px;
+        font-size: 18px;
         font-weight: bold;
         text-decoration: none;
         color: white;
@@ -60,27 +68,39 @@
     }
 
     /*shakti week*/
-    .container{
-        flex-direction: column;
+    .poster-container{
+        height: 42rem;
     }
-    .h2{
-        font-size: 45px;
-        top: 0;
-        margin-bottom: 45px;
+    .poster-container > h1{
+        font-size: 1.8rem;
     }
-    .para{
-        letter-spacing: 2.5px;
-        line-height: 30px;
-        font-size: 25px;
-        margin-left: 6%;
-        margin-right: 6%;
-        margin-bottom: 3%;
+    .poster-img > img{
+        height: 11rem;
+        width: 34rem;
+        justify-content: center;
+        margin-top: -8rem;
+        margin-left: -.5rem;
+    }
+    .poster-smallPara{
+        margin-top: 14rem;
+    }
+    .poster-smallPara > p{
+        margin-top: 90%;
+        margin-left: -85%;
+        width: 170%;
+    }
+    .poster-smallPara > a > h4{
+        margin-left: -3rem;
+        width: 7rem;
     }
 
     /*about us*/
+    #aboutUs{
+        margin: 5%;
+    }
     .box{
         flex-direction: column;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
     .heading{
         position: relative;
@@ -92,7 +112,7 @@
     }
 
     .heading h1 {
-        font-size: 50px;
+        font-size: 2.5rem;
         font-weight: 600;
     }
     .img {
@@ -101,111 +121,141 @@
         margin-left: 1%;
     }
     .img > img {
-        height: 230px;
-        width: 260px;
+        height: 210px;
+        width: 240px;
     }
     .content {
         position: relative;
-        letter-spacing: 2.5px;
-        line-height: 35px;
-        font-size: 25px;
-        padding: 25px;
-        margin-left: 3%;
-        margin-right: 3%;
+        width: 100%;
+        padding: 12px;
+    }
+    .content > p{
+        font-size: 0.95rem;
     }
 
     /* Our Mentors */
+    .container-reviews {
+        margin: 0;
+        height: 28rem;
+    }
     .testimonials{
+        min-height: 27rem;
         margin-top: 50px;
-        margin-bottom: 20px;
+        margin-bottom: -30%;
+    }
+    .testimonials .item {
+        width: 200px;
+        padding: 10px;
     }
     .slider h1{
-        font-size: 50px;
+        font-size: 2.8rem;
         font-weight: 600;
     }
     .cardtitle{
-        font-size: 30px;
+        font-size: 18px;
     } 
     .carddescription{
-        font-size: 22px;
+        font-size: 12px;
     }
     .cardimg {
-        margin-top: 1.5rem;
+        margin-top: .5rem;
         margin-bottom: 1.5rem;
-        max-height: 7rem;
-        border-radius: 9999px;
-      } 
+        max-height: 5rem; 
+        max-width: 3rem;
+    } 
+    .testimonials .item img {
+        border-radius: 50%;
+        border: 4px solid #3b344d;
+    }
 
  
     /* pastworks - bdd */
+    .testim{
+        height: 33rem;
+    }
     .content-project {
         position: absolute;
         text-align: center;
-        top: 15%;
-        width: 62%;
+        top: 10%;
+        width: 100%;
     }
-    .content-project > h2 {
-        font-size: 60px;
+    .content-project > h1 {
+        font-size: 2.7rem;
         text-align: center;
         font-weight: 600;
-        letter-spacing: 1.5px;
+        letter-spacing: 2px;
     }
     .content-project > p {
-        font-size: 30px;
-        letter-spacing: 2px;
-        line-height: 30px;
-        padding: 25px;
+        font-size: 1rem;
+        letter-spacing: .8px;
+        line-height: 25px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 30px;
     }
-    .content-project > button{
-        font-size: 24px;
-        width: 25%;
-        padding: 7px;
-        border-radius: 5px;
-      }
+    .content-project >a> button {
+        font-size: 15px;
+        width: 40%;
+        margin: 0rem;
+    }
 
     /* social media handles */
+    .media-handels{
+        height: 9rem;
+    }
     .media-handels h1{
-        font-size: 60px;
+        padding: 10%;
+        font-size: 2.5rem;
         font-weight: 600;
-        margin-bottom: -15px;
+        margin-bottom: 5px;
     }   
     .social-icon > a > img {
-        width: 190px;
+        margin-top: 10%;
+        width: 4.8rem;
     }
 
     /* Aashraya stats */
     .text-stats{
-        height: 1480px;
+        height: 1300px;
+        text-align: center;
     }
     .text-stats h1 {
-        margin-top: 15px;
-        font-size: 60px;
+        margin-top: -10%;
+        font-size: 40px;
         text-align: center;
         font-weight: bold;
     }
     .icon-stats img{
-        width: 180px;
+        width: 5rem;
     }
     .icon-stats {
-        width: 150px;
+        width: 0px;
+        margin-left: 10%;
+        margin-right: 27%;
     }
-    .icon-stats h3{
-        font-size: 35px;
+    .icons>div>h3 {
+        font-size: 1.1rem;
     }
 
     /* contact us */
-    
+    .text-stats h1 {
+        margin-top: 0%;
+        font-size: 2.4rem;
+    }
     .contact-form-all > div > img{
         visibility: hidden;
     }
     .form-container-box{
-        height: 500px;
-        margin-right: 35%;
+        height: 27rem;
+        margin-right: 31.6rem;
+        margin-top: -30%;
     }
+
     .form-container-box > input{
-        font-size: 28px;
+        font-size: .95rem;
         padding: 9px;
         margin: 9px;
+        width: 18rem;
     }
     .form-container-box > button{
         margin-top: 18px;
@@ -213,10 +263,20 @@
     }
 
     /* footer */
+    .logo-footer>img {
+        visibility: hidden;
+    }
+    .footer-box > section{
+        margin: 0 1.9rem;
+    }
     .footer-box > section > span{
-        font-size: 25px;
-        margin: 3px;
-        letter-spacing: 2px;
+        font-size: 15px;
+        margin: 1.5px;
+        letter-spacing: 1px;
+    }
+    .footer-box{
+        padding: 0px;
+        margin-left: 9rem;
     }
     .contact-form h3{
         font-size: 40px;
@@ -225,7 +285,12 @@
         font-size: 24px;
     }
     .footer-bottom{
-        font-size: 24px;
+        font-size: 12px;
+        margin-top: 25px;
+        margin-left: 2px;
+    }
+    .contact-form > form{
+        visibility: hidden;
     }
 
 }
